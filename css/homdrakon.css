@@ -1,0 +1,200 @@
+*,html,body {margin: 0; padding: 0; border:0; }
+//:root {font-size: -webkit-calc(1vw + 1vh + 0.23vmin);font-size: calc(1vw + 1vh + 0.23vmin);}
+//:root {font-size: calc((1vw + 1vh)*0.85);}
+
+body{font-family:"Times New Roman", Arial, sans-serif;
+    font-size:100%; 
+  //font-size:1rem; 
+  background:url(../images/bg.jpg);
+}
+#s1 {width:100%; display:block; position: relative; 
+    height:720px;
+    height:100vh;
+    background: url(../images/drak.jpg);
+    background-size:cover;
+    text-align:center;
+}
+#s1 header {position:absolute; width:100%; height:12%; top:0;
+    background-color:#000;
+    background-color:rgba(0, 0, 0, 0.3);     
+    opacity:0.85;
+    border:2px solid #16c8b; 
+    box-shadow:1px 2px 3px #777;
+}    
+#s1 a h1 {width:100%; top:38%; 
+    //padding-top: 3%;
+    position:absolute;
+    color: #fff;
+    font-size:600%;
+   //font-size:7em;
+    color:rgba(255,255,255,0.4); letter-spacing: 4px;
+    text-align: center; font-weight:bold;
+    text-shadow:6px 5px 4px rgba(4,49,54,0.8), 1px 1px 0 rgb(255,255,255);
+}
+#s1 h3 {width:100%; top:33%;
+   //padding-top: 12%;
+   position:absolute;
+   font-family: 'Niconne', cursive;
+   color: #0ff; text-shadow:#191919 2px 2px 1px;
+}
+#s1 h1:hover {color:#ffd217; transition:all 1s;}
+a {text-decoration:none; }
+/*----------------------------------------*/
+.pas1 {background:#E0371E url(../images/down.png) no-repeat center center;
+    width:3em; height:3em;  
+    left:48%; top:86%;
+    opacity:0.6;
+    position:absolute;
+    z-index:20;
+   -webkit-transition:opacity linear 0.3s;
+   -moz-transition:opacity linear 0.3s;
+    transition:opacity linear 0.3s;
+    border-radius:50% 50% 50% 50%;
+    box-shadow:0 1px 2px #AF2C19 inset;
+}
+.pas1:hover,.pas2:hover {opacity:1;}
+.pas2 {background:#E0371E url(../images/up.png) no-repeat center center;
+    width:3em; height:3em;  
+    left:48%; bottom:1.5%;
+    opacity:0.6;
+    position:absolute;
+    z-index:20;
+   -webkit-transition:opacity linear 0.3s;
+   -moz-transition:opacity linear 0.3s;
+    transition:opacity linear 0.3s;
+    border-radius:50% 50% 50% 50%;
+    box-shadow:0 1px 2px #AF2C19 inset;
+}
+/*============ Audio ======================*/
+.icon {top: 1.2em; right: 4.3em; 
+    width: 1.3em; height: 1.3em; 
+    position: fixed; color:#D7DFED;  
+    z-index:20;
+}
+#playbtn {font-size:1em; top:1.2em; right:4.3em;
+    position:fixed; opacity:0.1; z-index:21;
+}
+#volum21, #volum22 {top:1.2em; right:2.8em;
+    width: 1.1em; height: 1.1em; 
+    position:fixed; color: #fff; font-size: 1.1em;  
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    z-index:21;
+}
+#volum22 {right:1.8em;} 
+/*===============Соц.кнопки====================*/
+html .pluso {left:-14px; top:40%; position:fixed; opacity:0.5;}	
+html .pluso:hover {left:-8px; top:40%; position:fixed; opacity:0.8;}	
+/*-------------------------------------------------------------*/
+@media screen and (max-width: 700px) {body {font-size:90%;} #s1 a h1 {font-size:5em;}} 
+/*=============DRAKON=======================================*/
+#blok_slider {display:block; position: relative; float:left;
+       width:100%;
+       height:682px;
+       height:100vh;
+       background:url(../images/bg.jpg);
+}
+#slider {width: 85%; 
+    height: 620px;
+    height: 85vh;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	box-shadow: 0px 0px 30px #000;
+    margin: 5% auto;
+	background:url(../images/bgf.png) fixed;
+    background-size: cover;
+    background-position:center center;
+}
+.pxs_bg {text-align:center; font-size:170%;}
+.pxs_bg div {height:100%; top:0; left:0; position:absolute;
+	width:7584px;
+/*1264px window width times number of images*/
+}
+/*Add a .pxs_bg# for each number of backgrounds specified in options.numBackgrounds*/
+.pxs_bg .pxs_bg1 {background:url(../images/bg1.png);}
+.pxs_bg .pxs_bg2 {background:url(../images/bg2.png);}
+.pxs_bg .pxs_bg3 {background:url(../images/bg3.png);}
+.pxs_slider_wrapper {display: none;}
+
+ul.pxs_slider {left:0; top:0; padding:0; position:absolute;}
+ul.pxs_slider li {float:left; position:relative; display: block;
+	list-style:none; text-align:center;
+	margin-top:35px;
+}
+ul.pxs_slider li img {display: inline-block;
+	border: 10px solid rgba(251, 249, 205, 0.3);
+	box-shadow: 0px 0px 15px #000;
+	border-radius: 5px 5px 5px 5px;
+	text-align: center;
+}
+ul.pxs_thumbnails {height:80px; padding:0; position:absolute;
+       display:block; bottom:0; left:50%; 
+}
+ul.pxs_thumbnails li {position: absolute; display: block;}
+ul.pxs_thumbnails li img {display: block; 
+	border: 3px solid #fff;
+	cursor:pointer;
+    border-radius:3px;
+	box-shadow: 0px 0px 10px #000;
+	opacity: 0.7;
+}
+ul.pxs_thumbnails li.selected img {	opacity: 1;	border-color: #09530D;}
+.pxs_navigation span {
+	position: absolute;
+	width:30px; height:50px;
+	box-shadow: 0px 0px 2px #000;
+	top: 145px;
+	opacity: 0.6;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.pxs_navigation span:hover {opacity: 1;}
+.pxs_navigation span.pxs_prev {background:#000 url(../images/prev.png) no-repeat center center;}
+.pxs_navigation span.pxs_next {background:#000 url(../images/next.png) no-repeat center center;}
+.pxs_loading {color: #FFF; font-size: 20px;
+	padding: 15px 15px 15px 50px;
+	position: absolute;
+	background: #333 url(../images/ajax-loader.gif) no-repeat 10px 50%;
+	border-radius: 15px;
+	opacity: 0.7;
+	width: 180px;
+	position: absolute;
+	top: 150px;	left: 50%;
+	margin-left: -90px;
+}
+.pxs_actions {width:38px; left:10px; position:absolute;
+	bottom: 10px; display: block;
+}
+.pxs_pause, .pxs_play {left:0; top:0; width: 20px;height: 20px;
+	float: left;
+	position: relative;
+	border: 1px solid #fff;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0.7;
+	cursor: hand;
+	text-indent: -10000em;
+	background-image: url(../images/play_pause.png);
+	border-radius: 3px;
+}
+.pxs_pause:hover, .pxs_play:hover {border-color: #828282; background-color:#fff;}
+.pxs_pause {	background-position: -15px -10px;}
+.pxs_pause:hover {background-position: -15px -21px;}
+.pxs_play {background-position: 2px -10px;}
+.pxs_play:hover {background-position: 2px -21px;}
+
+#birds {	width:5%; height:auto; position: absolute;
+	margin-left:0; margin-top:0;
+	z-index:0;
+}
+#birds img {width:30%; height:auto; position:absolute;
+    left:0; top:0; z-index:0;
+}
+#birds #bird1 {width: 50%; left: 2%;}
+#birds #bird2 {width: 40%; top: 30%;}
+#birds #bird3 {width: 30%; left: 64%; top: 10%;}
+#birds #bird4 {width: 20%; top:15%; left: 100%;}
+/*---------------------------------------------*/
+/*@media only screen and (max-width: 850px) and (min-width: 450px)*/
+@media screen and (max-height: 500px) {#slider {margin:2% auto;  height:95vh; font-size:90%;} } 
+@media screen and (max-height: 480px) {ul.pxs_thumbnails {display: none;} }

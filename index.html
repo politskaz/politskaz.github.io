@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="title" content="Сказка">
+<meta name="description" content="Творческие мотивы">
+<meta name="author" content="Сергей Пашков">
+<title>Сказка</title>
+<link rel="stylesheet" type="text/css" href="css/homdrakon.css">
+
+<script src="js/modernizr.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.parallaxSlider.js"></script>
+<script>
+jQuery(document).ready(function($){
+	var easing = 'swing';
+	$("#slider").parallaxSlider({
+		autoPlay:5000,
+		speed:2000, 
+		easing: 'swing',
+		numBackgrounds: 4,
+		thumbRotation:false,
+		css3: true,
+		easingCSS3: 'cubic-bezier(0.000, 0.265, 1.000, 0.005)',
+	});
+})
+</script>
+</head>
+<body>
+<div id="s1">
+    <header></header> 
+    <h3>Сергей Пашков</h3>
+    <a href="#blok_slider" class="btn1"><h1><i>Политсказка</i></h1></a>
+    <a href="#blok_slider"><div class="pas1"></div></a>
+</div> 
+<!----------------------------------------------->
+<div id="blok_slider">
+<div id="slider" class="slider" >
+	<div class="pxs_bg"><span>Знищити дракона</span></div>
+    <div class="pxs_loading"></div>
+	<div class="pxs_slider_wrapper">
+		<ul class="pxs_slider">
+		 <li><img src="images/pas.png" title="pastux" height="350" width="900"/>
+            <p>Був собi на Слобожанщинi один хутор,<br>  
+               невеликий але й не маленький.<br> 
+               I був у тому хуторi пастушок Сеня.<br>  
+               Вiн пас стадо овець для всiєї громади.</p> 
+         </li>
+		 <li><img src="images/yan.png" title="yanpas" height="350" width="900"/>
+            <p>Ось почали у Сенi пропадати овцi.<br>
+               Пiшов тодi Сеня жалитися головi.<br>
+               А голова його утiшає:</p> 
+         </li>
+		 <li><img src="images/d1.png" title="drak1" height="350" width="900"/>
+            <p>- Ти не винний Сеня.<br> 
+               То у нас завiвся дракон ненажерливий, звiрюка гидка.<br> 
+               Вiн овець i краде.<br>
+               Iди собi, Сеня, додому та не турбуйся.<br></p>
+         </li>
+		 <li><img src="images/por.png" title="porpas" height="350" width="900"/>
+            <p>Через кiлька днiв Сеня опять приходить до головы i каже:<br> 
+               - Все одно овцi пропадають.<br>
+               А той йому і каже:</p>
+         </li>
+         <li><img src="images/d2.png" title="drak2"  height="350" width="900"/>
+            <p>- Та живе ж у нас та ненажерлива звiрюка,<br> 
+               дракон отой поганий.<br>
+               Вiн у тебе овець i ворує.<br>
+               Iди собi Сеня додому не торбуйся, я з цим драконом розберуся.</p>
+         </li>
+         <li><img src="images/stad.png" title="stado" height="350" width="900"/>
+              <p>А вiвцi все одно пропадають. I зрозумів Сеня, що толку от голови не буде.<br>  
+                I рiшив сам пiти воювати з драконом. А вiн же ж не козак, а пастух.<br>  
+                В нього нi шаблi немає нi гвинтiвки. I думає, якщо я йому дам стiльки мяса,<br>  
+                що вiн, гидота, вдавиця. Отак дракона i победю.<br>  
+                А то по одному барану так i перетягає. I погнав стадо.</p>
+         </li>
+         <li><img src="images/d3.png" title="drak3" height="350" width="900"/>
+            <p>Побачив нарештi Сеня дракона...<br> 
+               I давай годувати.</p>
+         </li>
+         <li><img src="images/sm.png" title="smert" height="350" width="900"/>
+            <p>Дракон вже давиться а Сеня запихає.<br> 
+               Як усе стадо скормив, дракон i подох.</p>
+         </li>  
+		</ul>
+		<div class="pxs_navigation">
+			<span class="pxs_next"></span><span class="pxs_prev"></span>
+		</div>
+		<ul class="pxs_thumbnails">
+			<li><img src="images/pastux.jpg" height="70" width="70"/></li>
+            <li><img src="images/yanpas.jpg" height="70" width="70"/></li>
+            <li><img src="images/drak1.jpg"  height="70" width="70"/></li>
+            <li><img src="images/porpas.jpg" height="70" width="70"/></li>
+            <li><img src="images/drak2.jpg"  height="70" width="70"/></li>
+            <li><img src="images/stado.jpg"  height="70" width="70"/></li>
+            <li><img src="images/drak3.jpg"  height="70" width="70"/></li>
+            <li><img src="images/smert.jpg"  height="70" width="70"/></li>
+		</ul>
+	</div><!--pxs_slider_wrapper-->
+</div><!---slider--->
+ <a href="#s1"><div class="pas2"></div></a>
+</div>
+<!----------Соц. сети----square---horizontal---------->  
+<script>
+(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();
+</script>
+<div class="pluso" data-background="transparent" data-options="medium,square,line,vertical,nocounter,theme=03" data-services="facebook,twitter,google,bookmark" data-url="politskaz.github.io" data-title="Блог Сергея" data-description="Творческие мотивы">
+</div>
+<!------------------Музыка----------------------->
+<img class="icon" src="images/aud40.png" alt="aud40" />
+<!--audio id="play1" autoplay loop volume=0.1><source src="audio/Nikolo_Paganini_Kapris_24.mp3"></audio--> 
+<form id="interface"> 
+   <input id="playbtn" type="button" value="...." onClick="PlayPause()"/>
+   <input id="volum21" type=button name=we1 value="+"  onClick="ZvukPlus()">
+   <input id="volum22" type=button name=we2 value="&#8211;"  onClick="ZvukMinus()">
+</form> 
+<!---управление плеером--->             
+<script>
+var audio1;
+//window.onload = function(){audio1 = document.getElementById("play1"); audio1.volume = 0.1;}
+function PlayPause(){if(audio1.paused){audio1.play();} else {audio1.pause();}}
+function ZvukPlus(){if(audio1.volume < 1 ){audio1.volume = audio1.volume + 0.1;}}
+function ZvukMinus(){if(audio1.volume > 0.1 ){audio1.volume = audio1.volume - 0.1;}}
+
+function initAudio(trek){
+	audio1 = new Audio();
+    audio1.volume = 0.1;
+	audio1.src = trek;
+    audio1.loop = true;
+	audio1.play();
+}
+window.addEventListener("load", initAudio('audio/Nikolo_Paganini_Kapris_24.mp3'));
+</script> 
+
+</body>
+</html>
